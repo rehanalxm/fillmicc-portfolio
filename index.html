@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmmicc | Photo & Video Grapher</title>
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/1.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="profile">
+        <a href="https://rehanalxm.github.io/My-Portfolio/" target="_blank">
+          <img src="assets/profile.jpg" alt="Profile Picture"
+        /></a>
+      </div>
+      <div class="center-logo logo" onclick="location.href='#hero'">
+        <img src="assets/center-logo.png" alt="profile" class="pic" />
+      </div>
+    </div>
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="assets/bg.mp4" type="video/mp4" />
+      <!-- Your browser does not support HTML5 video. -->
+    </video>
+    <div class="video-overlay"></div>
+
+    <!-- Sidebar & Header Toggle Button -->
+    <input type="checkbox" id="check" />
+    <label for="check" class="open-btn"><i class="fa-solid fa-bars"></i></label>
+
+    <a href="#" class="scroll-top" title="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <aside class="sidebar_menu">
+      <span class="close-btn">
+        <label for="check"><i class="fa-solid fa-xmark"></i></label>
+      </span>
+
+      <div class="logo"><a href="#hero">F i l l m i c c</a></div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">
+              <i class="fa-solid fa-user"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <i class="fa-solid fa-image"></i>
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#testimonials">
+              <i class="fa-solid fa-comment"></i>
+              <span>Testimonials</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/fillmicc/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1><span class="typing-text"></span></h1>
+          <p>
+            Professional photography & cinematic videography that turns emotions
+            into timeless visuals.
+          </p>
+          <a href="#portfolio" class="cta">View Portfolio</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2 class="section-title">Who We Are</h2>
+        <div class="about-grid">
+          <img
+            src="assets/photo.jpg"
+            alt="Fillmicc production team behind the scenes"
+          />
+          <div>
+            <p>
+              At <strong>Fillmicc</strong>, we specialize in professional photo
+              & video shoots for brands, businesses, and creators. From
+              capturing raw moments to delivering full-edited cinematic content
+              — we bring your story to life, frame by frame.
+            </p>
+            <p>
+              Whether it’s a product shoot, a model portfolio, a brand launch
+              video, a shop promotion, or a travel-based event — our team
+              handles the entire journey:
+              <strong>concept, shoot, and final video delivery</strong> ready
+              for digital platforms or campaigns.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fa-solid fa-camera-retro"></i>
+            <h3>Photography</h3>
+            <p>Portraits, weddings, products, lifestyle & more.</p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-video"></i>
+            <h3>Cinematic Videography</h3>
+            <p>Story‑driven films with professional editing & color‑grading.</p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-fan"></i>
+            <h3>Drone Footage</h3>
+            <p>Aerial perspectives in 4K for events, real‑estate & travel.</p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <h3>Post‑Production</h3>
+            <p>Retouching, visual effects & soundtrack licensing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid scroll-container portfolio-scroll">
+          <div class="scroll-track">
+            <!-- Repeat portfolio-item as needed, replace images with your own -->
+            <div class="portfolio-item">
+              <a
+                href="https://www.instagram.com/reel/C-PeY0EIutc/?utm_source=ig_web_copy_link&igsh=bnpxcHRwa2xmY2k0"
+                target="_blank"
+              >
+                <img src="assets/kia.png" alt="Wedding moments" />
+              </a>
+              <div class="portfolio-caption">Kia Shoot</div>
+            </div>
+            <div class="portfolio-item">
+              <a
+                href="https://www.instagram.com/reel/C-j2gQcSTz2/?utm_source=ig_web_copy_link&igsh=MTI4YXZsOTM0ZWxhZg=="
+                target="_blank"
+              >
+                <img src="assets/cafe.png" alt="Travel adventure" />
+              </a>
+              <div class="portfolio-caption">Cafe Shoot</div>
+            </div>
+            <div class="portfolio-item">
+              <a
+                href="https://www.instagram.com/reel/DKj1VCqpLMT/?utm_source=ig_web_copy_link&igsh=MWdianJ6eHRtdTN3MA=="
+                target="_blank"
+              >
+                <img src="assets/mg.png" alt="Commercial shoot" />
+              </a>
+              <div class="portfolio-caption">MG Shoot</div>
+            </div>
+            <div class="portfolio-item">
+              <a
+                href="https://www.instagram.com/reel/DIdzo4ESAXt/?utm_source=ig_web_copy_link&igsh=cjc1dDhhbXI1dmty"
+                target="_blank"
+              >
+                <img src="assets/fortuner.png" alt="Commercial shoot" />
+              </a>
+              <div class="portfolio-caption">Fortuner Shoot</div>
+            </div>
+            <div class="portfolio-item">
+              <a
+                href="https://www.instagram.com/reel/C-zSkElyrEf/?utm_source=ig_web_copy_link&igsh=MTZuMmZnOHhrcDk1ZA=="
+                target="_blank"
+              >
+                <img src="assets/revolt.png" alt="Commercial shoot" />
+              </a>
+              <div class="portfolio-caption">Revolt Shoot</div>
+            </div>
+            <div class="portfolio-item">
+              <a
+                href="https://www.instagram.com/reel/DCT0HsXSl_v/?utm_source=ig_web_copy_link&igsh=MWdoanlyd3c2aGowcg=="
+                target="_blank"
+              >
+                <img
+                  src="assets/skoda.png"
+                  alt="SKODA logo centered on a black background, white serif letters with stylized O resembling an eye, minimal and bold design, conveys a sense of elegance and mystery"
+                />
+              </a>
+              <div class="portfolio-caption">Skoda Shoot</div>
+            </div>
+            <!-- …add more… -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials">
+        <h2 class="section-title">What Clients Say</h2>
+        <div class="testimonials scroll-container testimonial-scroll">
+          <div class="scroll-track">
+            <div class="testimonial-card">
+              <h3>KIA</h3>
+              <p>
+                "The video shoot was handled with utmost professionalism. Every
+                frame reflected our brand’s premium feel. Great work!"
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/rohit.jpg" alt="Client portrait" />
+                <span>— Rohit Malhotra</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <h3>Cafe Olly's</h3>
+              <p>
+                "Loved how beautifully the ambience and menu were captured. The
+                video truly makes you want to visit again and again!"
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/priya.jpg" alt="Client portrait" />
+                <span>— Priya Sinha</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <h3>MG</h3>
+              <p>
+                "Exceptional videography that perfectly showcased our cars.
+                Smooth shots, clear focus, and an eye for detail!"
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/vikram.avif" alt="Client portrait" />
+                <span>—Vikram Ahuja</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <h3>Fortuner</h3>
+              <p>
+                "The video shoot highlighted the bold and powerful look of the
+                Fortuner exactly as we wanted. Impressive work!"
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/sahil.jpeg" alt="Client portrait" />
+                <span>— Sahil Verma</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <h3>Revolt</h3>
+              <p>
+                "Dynamic shots and perfect pacing – the video brought our bikes
+                to life. Absolutely thrilled with the result!"
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/ankit.jpeg" alt="Client portrait" />
+                <span>— Ankit Raj</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <h3>Skoda</h3>
+              <p>
+                "Clean, elegant, and impactful video work. It matched the luxury
+                feel of our brand perfectly."
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/nikhil.jpeg" alt="Client portrait" />
+                <span>— Nikhil Singh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xeokgdlw"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Tell me about your project…"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>© 2025 Filmmicc Studio · All rights reserved</footer>
+
+    <!-- Optional small JS to auto‑close sidebar on nav click -->
+    <script src="script.js"></script>
+  </body>
+</html>

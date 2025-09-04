@@ -73,6 +73,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   font-family: "Poppins", sans-serif;
   background-color: var(--clr-bg);
   color: var(--clr-primary);
@@ -704,3 +705,4 @@ footer {
     align-items: center;
     justify-content: center;
 } */
+
